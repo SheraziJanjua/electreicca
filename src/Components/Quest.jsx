@@ -23,10 +23,10 @@ function Quest() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nesciunt!
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-yellow-500 font-semibold px-3 py-1 md:px-10 md:py-3 rounded">
+          <button className="bg-yellow-500 md:font-semibold px-3 py-1 md:px-10 md:py-3 rounded">
             GET A QUOTE
           </button>
-          <button className="bg-white text-gray-700 font-semibold px-3 py-1 sm:px-10 sm:py-3 rounded">
+          <button className="bg-white text-gray-700 md:font-semibold px-3 py-1 sm:px-10 sm:py-3 rounded">
             CALL NOW
           </button>
         </div>
