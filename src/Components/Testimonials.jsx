@@ -43,7 +43,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-  <div className='relative w-full p-8 md:max-w-[950px] md:p-6 md:mx-auto ' >
+  <div className='relative w-full p-4 md:max-w-[950px] md:p-6 md:mx-auto ' >
     <div className="flex flex-col justify-center bg-white py-12 relative">
       <h1 className="text-center font-bold text-xl md:text-3xl lg:text-4xl tracking-wider mb-4">
         Customers Testimonial
