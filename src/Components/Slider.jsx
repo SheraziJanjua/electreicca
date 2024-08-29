@@ -9,7 +9,7 @@ const Sliderr = () => {
 
   const NextArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] right-4 ipad:right-0 lg:right-[-10px] xl:right-[-10px] z-10"
+      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] right-3 ipad:right-0 lg:right-[-10px] xl:right-[-10px] z-10"
       onClick={() => sliderRef.current.slickNext()}
     >
       →
@@ -18,7 +18,7 @@ const Sliderr = () => {
 
   const PrevArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] left-4 ipad:left-0  lg:left-0 xl:left-[-10px] z-10"
+      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] left-3 ipad:left-0  lg:left-0 xl:left-[-10px] z-10"
       onClick={() => sliderRef.current.slickPrev()}
     >
       ←
