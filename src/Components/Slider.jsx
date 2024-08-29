@@ -45,7 +45,7 @@ const Sliderr = () => {
                 <h1 className="text-white text-xl md:text-4xl lg:text-6xl font-semibold mb-4 tracking-wider">
                   {data.heading}
                 </h1>
-                <h2 className="text-white mt-4 px-4 text-sm tracking-tighter md:text-lg lg:text-xl lg:whitespace-nowrap">
+                <h2 className="text-white mt-4 px-6 text-sm tracking-tighter md:text-lg lg:text-xl lg:whitespace-nowrap">
                   {data.text}
                 </h2>
                 <button className="bg-yellow-500 px-4 py-1 md:px-8 md:py-2 lg:px-12 lg:py-4 text-white md:font-semibold rounded-lg mt-8">
