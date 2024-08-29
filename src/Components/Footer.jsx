@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-zinc-800 text-white py-10 ">
-      <div className="w-7xl mx-auto flex flex-col md:flex-row justify-center sm:px-6 md:px-6  lg:px-[190px]  ">
+      <div className="w-7xl mx-auto flex flex-col md:flex-row justify-center sm:px-6 md:px-6  lg:px-[185px]   ">
         
         <div className="w-full md:w-1/3 text-center md:text-left mb-8 md:mb-0">
           <h2 className="text-2xl font-bold">Quick Links</h2>
@@ -50,8 +50,8 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="text-center mt-12">
-        <p className="mt-8 text-sm font-semibold tracking-widest text-white">2024 All Rights Reserved. Design by Free html Templates Distribution by ThemeWagon</p>
+      <div className="text-center mt-12 px-4">
+        <p className="mt-8 text-sm  font-semibold tracking-widest text-white">2024 All Rights Reserved. Design by Free html Templates Distribution by ThemeWagon</p>
       </div>
     </footer>
   );

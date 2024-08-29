@@ -9,7 +9,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="absolute bottom-12 left-0 lg:left-[3%] lg:bottom-0 text-sm lg:test-lg z-10 bg-yellow-500 text-white px-4 py-2 "
+      className="absolute top-12  left-0 lg:left-[3%] md:left-[10%] lg:top-[90%] md:top-[68%] text-sm lg:test-lg z-10 bg-yellow-500 text-white px-4 py-2 "
       onClick={onClick}
       aria-label="Previous"
     >
@@ -22,7 +22,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="absolute bottom-12 left-[89%] lg:left-[9%] text-sm lg:test-lg lg:bottom-0 z-10 bg-yellow-500 text-white px-4 py-2 "
+      className="absolute top-12 left-[89%] lg:left-[9%] md:left-[15%]  md:top-[68%] text-sm lg:test-lg lg:top-[90%] z-10 bg-yellow-500 text-white px-4 py-2 "
       onClick={onClick}
       aria-label="Next"
     >
@@ -65,7 +65,7 @@ const TestimonialSlider = () => {
                       />
                     </div>
                     <div className="text-center md:text-left">
-                      <h3 className="ml-8 font-bold text-2xl text-gray-900">
+                      <h3 className="md:ml-8 font-bold text-2xl text-gray-900">
                         {testimonial.user}
                       </h3>
                       <div className=''>

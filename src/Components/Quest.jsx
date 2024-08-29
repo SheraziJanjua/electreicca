@@ -22,11 +22,11 @@ function Quest() {
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nesciunt!
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-yellow-500 font-semibold px-6 py-2 sm:px-10 sm:py-3 rounded">
+        <div className="flex justify-center gap-4">
+          <button className="bg-yellow-500 font-semibold px-3 py-1 md:px-10 md:py-3 rounded">
             GET A QUOTE
           </button>
-          <button className="bg-white text-gray-700 font-semibold px-6 py-2 sm:px-10 sm:py-3 rounded">
+          <button className="bg-white text-gray-700 font-semibold px-3 py-1 sm:px-10 sm:py-3 rounded">
             CALL NOW
           </button>
         </div>

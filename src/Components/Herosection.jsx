@@ -44,7 +44,7 @@ function Herosection() {
         <hr className='bg-yellow-500 h-2 w-16 md:w-24 lg:w-32 xl:w-40 mx-auto rounded-lg my-2' />
         
         <div className='max-w-[960px] mx-auto flex flex-col lg:flex-row justify-center items-center p-2'>
-          <div className='order-2 lg:max-w-2.5xl xl:max-w-3xl px-4'>
+          <div className='order-2 lg:max-w-2.5xl xl:max-w-3xl px-2'>
             <h2 className='font-semibold text-center lg:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-wider mt-8'>
               Slightly believable. If you are going
             </h2>
