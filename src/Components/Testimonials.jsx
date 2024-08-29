@@ -69,9 +69,9 @@ const TestimonialSlider = () => {
                         {testimonial.user}
                       </h3>
                       <div className=''>
-                      <p className=" mt-4 text-gray-700 text-xl leading-relaxed w-full p-2 md:max-w-xl lg:max-w-2xl">
+                      <p className=" mt-4 text-gray-700 text-xl leading-relaxed max-w-full md:max-w-xl lg:max-w-2xl">
                         {testimonial.text} <br />
-                        <span className='hidden' >
+                        <span className='hidden ' >
                           <img src={ss6} alt="" />
                         </span>
                       </p>
