@@ -3,7 +3,6 @@ import qqq from '../assets/qqq.jpg';
 
 function Quest() {
   return (
-    <div className='p-4'>
     <div className="relative w-full   h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
       <div
         style={{
@@ -32,7 +31,6 @@ function Quest() {
           </button>
         </div>
       </div>
-    </div>
     </div>
   );
 }

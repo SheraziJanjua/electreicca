@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <div className='bg-yellow-500 p-4 relative'>
+    <div className='bg-yellow-500 py-3 p-0 relative'>
       <div className="max-w-7xl mx-auto flex justify-between lg:justify-center lg:gap-44 items-center px-4 lg:px-0">
         <div className='text-white font-bold text-2xl tracking-wider md:text-3xl lg:text-4xl'>
           ELECTRICCA

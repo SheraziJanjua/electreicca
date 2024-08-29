@@ -9,7 +9,7 @@ const Sliderr = () => {
 
   const NextArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] right-7 ipad:right-0 lg:right-0 xl:right-[-10px] z-10"
+      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] right-4 ipad:right-0 lg:right-[-10px] xl:right-[-10px] z-10"
       onClick={() => sliderRef.current.slickNext()}
     >
       →
@@ -18,7 +18,7 @@ const Sliderr = () => {
 
   const PrevArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] left-8 ipad:left-0  lg:left-0 xl:left-[-10px] z-10"
+      className="bg-yellow-500 w-8 h-8 cursor-pointer text-black hover:bg-white flex items-center justify-center absolute bottom-[20%] md:bottom-[32%] lg:bottom-[40%] left-4 ipad:left-0  lg:left-0 xl:left-[-10px] z-10"
       onClick={() => sliderRef.current.slickPrev()}
     >
       ←
@@ -45,7 +45,7 @@ const Sliderr = () => {
                 <h1 className="text-white text-xl md:text-4xl lg:text-6xl font-semibold mb-4 tracking-wider">
                   {data.heading}
                 </h1>
-                <h2 className="text-white mt-4 text-sm tracking-tighter md:text-lg lg:text-xl lg:whitespace-nowrap">
+                <h2 className="text-white mt-4 px-1 text-sm tracking-tighter md:text-lg lg:text-xl lg:whitespace-nowrap">
                   {data.text}
                 </h2>
                 <button className="bg-yellow-500 px-4 py-1 md:px-8 md:py-2 lg:px-12 lg:py-4 text-white md:font-semibold rounded-lg mt-8">

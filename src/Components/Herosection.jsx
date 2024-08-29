@@ -37,7 +37,7 @@ function Herosection() {
         </div>
       </div>
       
-      <div className='mt-16 px-2'>
+      <div className='mt-16 px-1'>
         <h1 className='text-center font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-wider'>
           About Our Electricity Company
         </h1>
@@ -45,7 +45,7 @@ function Herosection() {
         
         <div className='max-w-[960px] mx-auto flex flex-col lg:flex-row justify-center items-center p-2'>
           <div className='order-2 lg:max-w-2.5xl xl:max-w-3xl px-4'>
-            <h2 className='font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-wider mt-8'>
+            <h2 className='font-semibold text-center lg:text-left text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-wider mt-8'>
               Slightly believable. If you are going
             </h2>
             <p className='mt-2 leading-relaxed text-base md:text-lg lg:text-lg xl:text-2xl tracking-wide'>
@@ -58,7 +58,7 @@ function Herosection() {
             </button>
           </div>
 
-          <div className='order-1 lg:max-w-[400px] xl:max-w-[450px] mt-8 lg:mt-0 px-2'>
+          <div className='order-1 lg:max-w-[400px] xl:max-w-[450px] mt-8 lg:mt-0 px-1'>
             <img src={heroimage} alt="Hero" className="w-full h-auto object-cover rounded-lg" />
           </div>
         </div>
