@@ -57,7 +57,7 @@ const TestimonialSlider = () => {
               <div key={index} className="flex justify-center gap-4">
                 <div className="flex flex-col gap-2 items-center justify-center">
                   <div className="flex flex-col md:flex-row items-center md:justify-center gap-4 md:gap-16 w-full lg:w-[900px] relative">
-                    <div className=" w-[100px] h-[140px] border-2 border-yellow-500 relative z-10 lg:w-[150px] lg:h-[200px]">
+                    <div className=" w-[95px] h-[140px] border-2 border-yellow-500 relative z-10 lg:w-[150px] lg:h-[200px]">
                       <img
                         src={testimonial.image}
                         alt={testimonial.user}
