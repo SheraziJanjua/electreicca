@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="flex-1 p-4 lg:ml-6 text-center lg:text-left">
-          <h2 className="text-2xl ml-8 font-bold">Newsletter</h2>
+          <h2 className="text-2xl md:ml-8 font-bold">Newsletter</h2>
           <form className="mt-4 p-8 md:mt-12 flex flex-col md:flex-row lg:flex-col lg:gap-4 md:items-center lg:items-start space-y-4 md:space-y-0">
             <input  
               type="email" 
