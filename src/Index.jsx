@@ -23,13 +23,13 @@ export const testimonials = [
     user: "John Doe",
     company: "Stellar Solutions",
     image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.The team was responsive, professional, and delivered results beyond my expectations.",
   },
   {
     user: "Jane Smith",
     company: "Blue Horizon Technologies",
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life.The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.The team was responsive, professional, and delivered results beyond my expectations.",
   },
   {
     user: "David Johnson",
@@ -47,13 +47,13 @@ export const testimonials = [
     user: "Michael Wilson",
     company: "Visionary Creations",
     image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.The team was responsive, professional, and delivered results beyond my expectations.",
   },
   {
     user: "Emily Davis",
     company: "Synergy Systems",
     image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.The team was responsive, professional, and delivered results beyond my expectations.",
+    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.The team was responsive, professional, and delivered results beyond my expectations.",
   },
 ];
 

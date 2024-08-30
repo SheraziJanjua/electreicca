@@ -8,10 +8,8 @@ const Footer = () => {
     <footer className="bg-zinc-800 text-white py-10">
       <div className="max-w-7xl mx-auto flex flex-col sm:px-6 lg:px-[185px] space-y-10 lg:space-y-0 lg:flex-row lg:justify-between">
         
-        {/* Quick Links and Blog in a Single Row on Medium Screens */}
-        <div className="flex flex-col md:flex-row w-full lg:w-2/3 space-y-10 md:space-y-0 md:space-x-10">
+        <div className="w-full flex flex-col md:flex-row md:justify-center md:ml-16  lg:w-2/3 space-y-10 md:space-y-0 md:space-x-10">
           
-          {/* Quick Links Section */}
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl font-bold">Quick Links</h2>
             <ul className="mt-6 md:mt-12 list-none">
@@ -24,7 +22,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Blog Section */}
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl font-bold">Blog</h2>
             <p className="mt-5 md:mt-12 w-full md:w-56 mx-auto md:mx-0">
@@ -38,7 +35,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Section */}
         <div className="flex-1 p-6 lg:ml-6 text-center lg:text-left">
           <h2 className="text-2xl font-bold">Newsletter</h2>
           <form className="mt-6 md:mt-12 flex flex-col md:flex-row lg:flex-col lg:gap-4 md:items-center lg:items-start space-y-4 md:space-y-0">
@@ -57,7 +53,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Text */}
       <div className="text-center mt-12 px-4">
         <p className="mt-8 text-sm font-semibold tracking-widest text-white">
           2024 All Rights Reserved. Design by Free HTML Templates Distribution by ThemeWagon

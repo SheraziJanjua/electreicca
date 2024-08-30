@@ -65,7 +65,7 @@ const TestimonialSlider = () => {
                       />
                     </div>
                     <div className="text-center md:text-left">
-                      <h3 className="md:ml-8 font-bold text-2xl text-gray-900">
+                      <h3 className="md:ml-0 font-bold text-2xl text-gray-900">
                         {testimonial.user}
                       </h3>
                       <div className=''>
