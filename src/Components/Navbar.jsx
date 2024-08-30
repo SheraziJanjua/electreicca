@@ -17,7 +17,7 @@ function Navbar() {
         <div className='text-white font-bold text-2xl tracking-wider md:text-3xl lg:text-4xl'>
           ELECTRICCA
         </div>
-        <ul className="hidden sm:flex space-x-1.5  md:space-x-3 text-white text-sm md:text-base lg:text-lg">
+        <ul className="hidden sm:flex space-x-1.5 md:space-x-3 text-white text-sm md:text-base lg:text-lg">
           {navItems.map((item, index) => (
             <li 
               key={item.label} 
@@ -35,9 +35,9 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`absolute top-16 py-6 right-0 z-20 bg-yellow-400 w-full overflow-hidden transition-all duration-1000 ease-in-out ${mobile ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`sm:hidden absolute top-15 py-7 right-0 z-20 bg-yellow-400 w-full overflow-hidden transition-all duration-1000 ease-in-out ${mobile ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'} sm:max-h-64 sm:opacity-100`}
       >
-        <ul className={`flex flex-col items-center  font-semibold text-white text-sm space-y-2 transition-opacity duration-300 ${mobile ? 'opacity-100' : 'opacity-0'}`}>
+        <ul className={`flex flex-col items-center font-semibold text-white text-sm space-y-2 transition-opacity duration-300 ${mobile || window.innerWidth >= 640 ? 'opacity-100' : 'opacity-0'}`}>
           {navItems.map((item, index) => (
             <li 
               key={item.label} 
