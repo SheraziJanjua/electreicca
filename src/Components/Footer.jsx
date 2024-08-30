@@ -24,7 +24,7 @@ const Footer = () => {
 
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-2xl font-bold">Blog</h2>
-            <p className="mt-5 p-6 md:mt-12 w-full md:w-56 mx-auto md:mx-0">
+            <p className="mt-5 p-8 md:mt-12 w-full md:w-56 mx-auto md:mx-0">
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
             </p>
             <div className="mt-5 md:mt-6 flex justify-center md:justify-start space-x-4 text-2xl">
