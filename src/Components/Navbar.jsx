@@ -28,8 +28,8 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <div className='sm:hidden'>
-          <button onClick={toggle} className="text-white">
+        <div className='sm:hidden '>
+          <button onClick={toggle} className="text-white mt-[6px] ">
             {mobile ? <IoMdClose size={28} /> : <MdOutlineMenu size={28} />}
           </button>
         </div>
