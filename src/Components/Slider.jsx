@@ -8,7 +8,7 @@ const Sliderr = () => {
   const sliderRef = useRef(null);
   const NextArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-6 md:w-10 md:h-10 cursor-pointer text-black hover:bg-white rounded-lg absolute bottom-[20%] right-4 md:bottom-[25%] lg:bottom-[22%] md:right-4 lg:right-[-10px] z-10 sm:right-2"
+      className="bg-yellow-500 w-8 h-6 md:w-10 md:h-6 cursor-pointer  text-black hover:bg-white rounded-lg absolute bottom-[20%] right-4 md:bottom-[25%] lg:bottom-[22%] md:right-4 lg:right-[-10px] z-10 sm:right-2"
       onClick={() => sliderRef.current.slickNext()}
     >
       <div style={{ display: 'flex',justifyContent: 'center', height: '100%', marginTop:'-1.5px' }}>
@@ -19,7 +19,7 @@ const Sliderr = () => {
   
   const PrevArrow = () => (
     <div
-      className="bg-yellow-500 w-8 h-6 md:w-10 md:h-10 cursor-pointer text-black hover:bg-white rounded-lg absolute bottom-[20%] left-4 md:bottom-[25%] lg:bottom-[22%] md:left-4 lg:left-[-10px] z-10 sm:left-2"
+      className="bg-yellow-500 w-8 h-6 md:w-10 md:h-6 cursor-pointer text-black hover:bg-white rounded-lg absolute bottom-[20%] left-4 md:bottom-[25%] lg:bottom-[22%] md:left-4 lg:left-[-10px] z-10 sm:left-2"
       onClick={() => sliderRef.current.slickPrev()}
     >
       <div style={{ display: 'flex', marginTop:'-1.5px', height: '100%',justifyContent: 'center' }}>
