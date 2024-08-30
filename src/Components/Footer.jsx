@@ -5,53 +5,63 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-800 text-white py-10 ">
-      <div className="w-7xl mx-auto flex flex-col md:flex-row justify-center sm:px-6 md:px-6  lg:px-[185px]   ">
+    <footer className="bg-zinc-800 text-white py-10">
+      <div className="max-w-7xl mx-auto flex flex-col sm:px-6 lg:px-[185px] space-y-10 lg:space-y-0 lg:flex-row lg:justify-between">
         
-        <div className="w-full md:w-1/3 text-center md:text-left mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold">Quick Links</h2>
-          <ul className="mt-12 list-none">
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Home</a></li>
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">About</a></li>
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Services</a></li>
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Blog</a></li>
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Testimonial</a></li>
-            <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Contact Us</a></li>
-          </ul>
-        </div>
-        
-        <div className="w-full p-2 md:w-1/3 text-center md:text-left mb-8 md:mb-0">
-          <h2 className="text-2xl font-bold">Blog</h2>
-          <p className="mt-12 w-full md:w-56 mx-auto md:mx-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+        {/* Quick Links and Blog in a Single Row on Medium Screens */}
+        <div className="flex flex-col md:flex-row w-full lg:w-2/3 space-y-10 md:space-y-0 md:space-x-10">
           
-          <div className="mt-6 flex text-2xl justify-center md:justify-start space-x-4">
-          <ImFacebook />
-          <FaTwitter />
-            <FaLinkedinIn />
+          {/* Quick Links Section */}
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-2xl font-bold">Quick Links</h2>
+            <ul className="mt-6 md:mt-12 list-none">
+              <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Home</a></li>
+              <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">About</a></li>
+              <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Services</a></li>
+              <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Blog</a></li>
+              <li className="mb-2 hover:text-yellow-500"><a href="#" className="hover:underline">Testimonial</a></li>
+              <li className="mb-0 hover:text-yellow-500"><a href="#" className="hover:underline">Contact Us</a></li>
+            </ul>
+          </div>
+
+          {/* Blog Section */}
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-2xl font-bold">Blog</h2>
+            <p className="mt-5 md:mt-12 w-full md:w-56 mx-auto md:mx-0">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+            </p>
+            <div className="mt-5 md:mt-6 flex justify-center md:justify-start space-x-4 text-2xl">
+              <ImFacebook />
+              <FaTwitter />
+              <FaLinkedinIn />
+            </div>
           </div>
         </div>
-        
-        <div className="w-full p-6 md:w-1/3 text-center md:text-left ">
+
+        {/* Newsletter Section */}
+        <div className="flex-1 p-6 lg:ml-6 text-center lg:text-left">
           <h2 className="text-2xl font-bold">Newsletter</h2>
-          <form className="mt-12">
+          <form className="mt-6 md:mt-12 flex flex-col md:flex-row lg:flex-col lg:gap-4 md:items-center lg:items-start space-y-4 md:space-y-0">
             <input  
               type="email" 
               placeholder="Enter Your Email" 
-              className="font-semibold w-full px-6 py-3 bg-zinc-800 border border-slate-300 focus:outline-none focus:border-blue-500" 
+              className="flex-1 px-6 py-3 bg-zinc-800 border border-slate-300 focus:outline-none focus:border-yellow-500 md:mr-4 lg:w-[150%]" 
             />
-            <br />
             <button 
               type="submit" 
-              className="mt-6 w-full md:w-auto px-10 py-3 rounded-sm font-semibold text-lg bg-yellow-500 hover:bg-yellow-600"
+              className="w-full  md:w-auto px-10 py-3 rounded-sm font-semibold text-lg bg-yellow-500 hover:bg-yellow-600"
             >
               SUBSCRIBE
             </button>
           </form>
         </div>
-        
       </div>
+
+      {/* Footer Text */}
       <div className="text-center mt-12 px-4">
-        <p className="mt-8 text-sm  font-semibold tracking-widest text-white">2024 All Rights Reserved. Design by Free html Templates Distribution by ThemeWagon</p>
+        <p className="mt-8 text-sm font-semibold tracking-widest text-white">
+          2024 All Rights Reserved. Design by Free HTML Templates Distribution by ThemeWagon
+        </p>
       </div>
     </footer>
   );

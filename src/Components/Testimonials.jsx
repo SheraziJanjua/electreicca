@@ -9,7 +9,7 @@ const PrevArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="absolute top-12  left-0 lg:left-[3%] md:left-[10%] lg:top-[90%] md:top-[68%] text-sm lg:test-lg z-10 bg-yellow-500 text-white px-4 py-2 "
+      className="absolute top-12  left-0 lg:left-[3%] md:left-[1%] lg:top-[90%] md:top-[85%] text-sm lg:test-lg z-10 bg-yellow-500 text-white px-4 py-2 "
       onClick={onClick}
       aria-label="Previous"
     >
@@ -22,7 +22,7 @@ const NextArrow = (props) => {
   const { onClick } = props;
   return (
     <button
-      className="absolute top-12 left-[89%] lg:left-[9%] md:left-[15%]  md:top-[68%] text-sm lg:test-lg lg:top-[90%] z-10 bg-yellow-500 text-white px-4 py-2 "
+      className="absolute top-12 left-[89%] lg:left-[9%] md:left-[93%]  md:top-[85%] text-sm lg:test-lg lg:top-[90%] z-10 bg-yellow-500 text-white px-4 py-2 "
       onClick={onClick}
       aria-label="Next"
     >
