@@ -36,6 +36,7 @@ function Herosection() {
           ))}
         </div>
       </div>
+
       
       <div className='mt-16 px-1'>
         <h1 className='text-center font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl tracking-wider'>
