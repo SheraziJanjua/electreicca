@@ -35,9 +35,9 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`sm:hidden absolute top-full right-0 z-20 bg-yellow-400 w-full overflow-hidden transition-transform duration-1000 ease-in-out transform ${mobile ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`sm:hidden   absolute top-full right-0 z-20 bg-yellow-400 w-3/5 flex justify-center h-screen overflow-hidden transition-transform duration-1000 ease-in-out transform ${mobile ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <ul className="flex flex-col items-center font-semibold text-white text-sm space-y-2 py-7">
+        <ul className="flex h-full    flex-col items-center justify-center font-semibold text-black text-sm space-y-6 mt-0">
           {navItems.map((item, index) => (
             <li 
               key={item.label} 
@@ -45,10 +45,11 @@ function Navbar() {
                 toggle(); 
                 setActive(index);
               }} 
-              className='hover:text-black cursor-pointer transition-colors duration-200 ease-in-out'
+              className='hover:text-gray-400 w-full flex justify-center  cursor-pointer transition-colors duration-200 ease-in-out'
             >
               <a href={item.href}>{item.label}</a>
             </li>
+            
           ))}
         </ul>
       </div>
