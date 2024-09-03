@@ -1,17 +1,52 @@
 import React, { useState } from 'react';
 import { features } from '../Index';
+import Slider from 'react-slick';
 import heroimage from '../assets/heroimage.jpg';
 
 function Herosection() {
   const [active, setActive] = useState(1);
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
 
   return (
     <>
       <div className='mt-16 px-4'>
         <h1 className='text-center font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>Our Services</h1>
         <hr className='bg-yellow-500 h-2 w-16 md:w-24 lg:w-32 xl:w-40 mx-auto rounded-lg my-4' />
-        
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8'>
+        <div className='block md:hidden'>
+          <Slider {...sliderSettings}>
+            {features.map((card, index) => (
+              <div 
+                key={index} 
+                className={`group flex flex-col items-center`} 
+                onMouseEnter={() => setActive(index)}
+              >
+                <div className={`flex flex-col gap-2 h-80 p-6 rounded-lg text-white transition-all duration-200 items-center justify-center ${
+                  index === active ? 'bg-black mt-4' : 'bg-yellow-500 hover:bg-black'
+                }`}>
+                  <div className='text-4xl md:text-5xl lg:text-6xl'>{card.icon}</div>
+                  <p className='font-semibold text-lg md:text-xl text-center mt-2'>{card.text}</p>
+                  <p className='text-base md:text-lg text-center'>{card.description}</p>
+                </div>
+                <div className='mt-4'>
+                  <button className={`font-semibold text-white px-6 py-2 rounded-lg transition-all duration-800 ${
+                    index === active ? 'bg-yellow-500' : 'bg-black group-hover:bg-yellow-500'
+                  }`}>
+                    Read More
+                  </button>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        <div className='hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8'>
           {features.map((card, index) => (
             <div 
               key={index} 
