@@ -35,7 +35,7 @@ function Navbar() {
         </div>
       </div>
       <div
-  className={`sm:hidden fixed top-[66px] right-0 z-20 bg-yellow-400 w-3/5 flex overflow-hidden justify-center h-dvh transition-all duration-1000 ease-in-out ${mobile ? 'right-0' : 'right-[-300px] '}`}
+  className={`sm:hidden fixed top-full right-0 z-20 bg-yellow-400 w-3/5 flex overflow-hidden justify-center h-dvh transition-all duration-1000 ease-in-out ${mobile ? 'absolute translate-x-0' : 'translate-x-full'}`}
 >
   <ul className="flex flex-col mt-48 font-semibold text-black text-sm space-y-6">
     {navItems.map((item, index) => (
