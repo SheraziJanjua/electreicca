@@ -17,7 +17,6 @@ function Navbar() {
         <div className='text-white font-bold text-2xl tracking-wider md:text-3xl lg:text-4xl'>
           ELECTRICCA
         </div>
-        {/* Desktop Nav Items */}
         <ul className="hidden sm:flex space-x-1.5 md:space-x-3 text-white text-sm md:text-base lg:text-lg">
           {navItems.map((item, index) => (
             <li 
@@ -29,16 +28,14 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        {/* Mobile Menu Button */}
         <div className='sm:hidden'>
           <button onClick={toggle} className="text-white pt-2">
             {mobile ? <IoMdClose size={28} /> : <MdOutlineMenu size={28} />}
           </button>
         </div>
       </div>
-      {/* Mobile Nav Items */}
       <div
-        className={`sm:hidden absolute top-full right-0 z-20 bg-yellow-400 w-full overflow-hidden transition-transform duration-300 ease-in-out transform ${mobile ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`sm:hidden absolute top-full right-0 z-20 bg-yellow-400 w-full overflow-hidden transition-transform duration-1000 ease-in-out transform ${mobile ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <ul className="flex flex-col items-center font-semibold text-white text-sm space-y-2 py-7">
           {navItems.map((item, index) => (
