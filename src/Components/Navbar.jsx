@@ -35,24 +35,25 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`sm:hidden   absolute top-full right-0 z-20 bg-yellow-400 w-3/5 flex justify-center h-dvh  overflow-hidden transition-transform duration-1000 ease-in-out transform ${mobile ? 'translate-x-0' : 'translate-x-full'}`}
+  className={`sm:hidden fixed top-[66px] right-0 z-20 bg-yellow-400 w-3/5 flex overflow-hidden justify-center h-dvh transition-all duration-1000 ease-in-out ${mobile ? 'right-0' : 'right-[-300px] '}`}
+>
+  <ul className="flex flex-col mt-48 font-semibold text-black text-sm space-y-6">
+    {navItems.map((item, index) => (
+      <li 
+        key={item.label} 
+        onClick={() => { 
+          toggle(); 
+          setActive(index);
+        }} 
+        className='hover:text-gray-400 w-full flex justify-center cursor-pointer transition-colors duration-200 ease-in-out'
       >
-        <ul className="flex flex-col mt-48 font-semibold text-black text-sm space-y-6">
-          {navItems.map((item, index) => (
-            <li 
-              key={item.label} 
-              onClick={() => { 
-                toggle(); 
-                setActive(index);
-              }} 
-              className='hover:text-gray-400 w-full flex justify-center   cursor-pointer transition-colors duration-200 ease-in-out'
-            >
-              <a href={item.href}>{item.label}</a>
-            </li>
-            
-          ))}
-        </ul>
-      </div>
+        <a href={item.href}>{item.label}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+
     </div>
   );
 }
