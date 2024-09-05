@@ -26,8 +26,10 @@ function Navbar() {
             >
               <a href={item.href}>{item.label}</a>
             </li>
+            
           ))}
         </ul>
+
         <div className='sm:hidden'>
           <button onClick={toggle} className="text-white pt-2">
             {mobile ? <IoMdClose size={28} /> : <MdOutlineMenu size={28} />}
@@ -48,6 +50,7 @@ function Navbar() {
         className='hover:text-gray-400 w-full flex justify-center cursor-pointer transition-colors duration-200 ease-in-out'
       >
         <a href={item.href}>{item.label}</a>
+        <button>Sign In</button>
       </li>
     ))}
   </ul>

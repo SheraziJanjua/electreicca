@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import headerimage from '../assets/headerimage.jpg';
 import { headslide } from '../Index';
+import { Link } from 'react-router-dom';
 
 const Sliderr = () => {
   const sliderRef = useRef(null);
@@ -51,9 +52,13 @@ const Sliderr = () => {
                 <h2 className="text-white mt-2 md:mt-6 px-[6px] text-sm tracking-normal md:text-lg lg:text-xl lg:whitespace-nowrap">
                   {data.text}
                 </h2>
-                <button className="bg-yellow-500 px-4 py-1 md:px-8 md:py-2 lg:px-12 lg:py-4 text-white md:font-semibold rounded-lg mt-4 md:mt-12">
-                  {data.button}
-                </button>
+                <div className=' mb-4 mt-6'>
+                <Link 
+                 to='/login'
+                 className="px-6 py-1 bg-yellow-500 text-black rounded-full text-lg font-semibold  transition duration-300 ease-in-out hover:bg-orange-500 glow-effect">
+                  Sign In
+                </Link>
+                </div>
               </div>
             </div>
           ))}
